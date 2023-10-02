@@ -1,0 +1,187 @@
+<!-- This website was inspired by TylerPottsDev. I watched his youtube 
+tutorial on hamburger menus and got much of the inspiration on the design 
+as well. 
+
+You can find his original source code here:
+https://github.com/TylerPottsDev/SPA-portfolio-page
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minervian Dynamics</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <div class="container">
+            <img src="./img/logo.png" alt="Minervian Dynamics Logo" width="62px" height="54px">
+            <h2><a href="https://minerviandynamics.com">
+                    Minervian Dynamics &nbsp;
+                </a></h2>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#alliance">Alliance</a>
+                <a href="#contact">Discord</a>
+            </nav>
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav">
+        <a href="#about">About</a>
+        <a href="#alliance">Alliance</a>
+        <a href="#contact">Discord</a>
+    </nav>
+
+    <main>
+
+        <section class="banner">
+            <div class="container">
+                <h1>
+                    An Eve-online <span>industry</span>
+                    focused corporation
+                </h1>
+
+                <h3>Open recruitment. <span>No minimum SP required.</span></h3>
+
+            </div>
+
+        </section>
+
+        <section id="about" class="container-about">
+            <div class="container">
+                <h2>About</h2>
+
+                <div class="container-about-grid">
+
+                    <div class="about">
+                        <figure class="img-box">
+                            <img src="./img/industry.jpeg" alt="Webs" class="img" />
+                        </figure>
+                        <div class="content">
+                            <h3>Industry</h3>
+                            <br>
+                            <p>
+                                - Based of of Scheenins <br>
+                                - Fleet mining <i>with boosts!</i><br>
+                                - Corp buy-back program <br>
+                                - Free alpha mining ships <br>
+                                - Highest tier reprocessing <br>
+                                - LP & ISK Tax Rate: <span>5%</span><br>
+                                <br>
+                                Read more about what we stand for online in our
+                                corporation description.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="about">
+                        <figure class="img-box">
+                            <img src="./img/fw.jpg" alt="Faction Warefare" class="img" />
+                        </figure>
+                        <div class="content">
+                            <h3>Faction Warfare</h3>
+                            <br>
+                            <p>
+                                We enlist for Gallente. We have <i>multiple</i>
+                                fleet commanders for FW, which allows us to run
+                                three to four nights a week!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about">
+                        <figure class="img-box">
+                            <img src="./img/abyssal.jpg" alt="Missions & Abyssals" class="img" />
+                        </figure>
+                        <div class="content">
+                            <h3>Missions & Abyssals</h3>
+                            <br>
+                            <p>
+                                We are currently running fleets for L4
+                                missions. We have players new and old, low and
+                                high SP, who all are happy to fleet up when you
+                                need help <i> - especially for killing Dagan!</i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about">
+                        <figure class="img-box">
+                            <img src="./img/mentoring.png" alt="Mentoring Service" class="img" />
+                        </figure>
+                        <div class="content">
+                            <h3>Mentoring</h3>
+                            <br>
+                            <p>
+                                We will help you understand any dimension of
+                                Eve that compliments your playstyle. While we are
+                                focused on industry,we have a vast wealth of
+                                experience we can to share with you -
+                                exploration, PvP, PvE, we can help you get
+                                started! <br> <br>
+                                We utilize discord for comms, and post a weekly
+                                schedule in the corp bulletins for all activities.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="alliance" class="container-alliance">
+            <div class="container">
+                <h2>Alliance</h2>
+
+                <div class="container-alliance-grid">
+
+                    <div class="alliance">
+                        <div class="content">
+                            <h3>We're building long term relationships</h3>
+                            <br>
+                            <p>
+                                Contact <span>Imokoz</span> or
+                                <span>Doctor WilyCoyote</span> for details on
+                                future alliances.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p><i>To contact us, use in-game mail or discord.</i></p>
+                <br>
+                <p>👇 </p>
+                <br>
+                <p><a class="" href="https://discord.gg/VMVQQRSh"><img src="./img/discord-light.png" alt="Join 
+                    Minervian Dynamics Discord" height="19px" width="100px"></a></p>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
