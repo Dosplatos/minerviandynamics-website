@@ -1,4 +1,10 @@
 window.onload = function () {
+	var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+if (isSafari) {
+    document.body.classList.add('safari');
+}
+
     window.addEventListener('scroll', function (e) {
         if (window.scrollY > 100) {
             document.querySelector("header").classList.add('is-scrolling');

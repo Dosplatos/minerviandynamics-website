@@ -2,7 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Space Grotesk";
+  font-family: "Space Grotesk", monospace;
+}
+
+body.safari * {
+  font-family: "Arial"; /* Use Lucida Sans for Safari */
 }
 
 html {
@@ -219,6 +223,24 @@ main section.banner .container h3 {
 main .container-about {
   background-image: radial-gradient(circle, #f8f1ce, #000);
   background-repeat: no-repeat;
+}
+main .container-about h3 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+main .container-about h4 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-style: italic;
+}
+@media (max-width: 767px) {
+  main .container-about h2 {
+    color: #ffed9f;
+  }
+  main .container-about h4 {
+    color: #f8f1ce;
+  }
 }
 main .container-about .container {
   padding-top: 64px;
