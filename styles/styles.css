@@ -230,7 +230,7 @@ main section.banner {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("../assets/bg.jpg");
+  background-image: url("../assets/bg.png");
   background-position: top right;
   background-size: cover;
 }
