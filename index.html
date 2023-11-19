@@ -1,183 +1,334 @@
-<!-- This website was inspired by TylerPottsDev. I watched his youtube 
-tutorial on hamburger menus and got much of the inspiration on the design 
-as well. 
-
-You can find his original source code here:
-https://github.com/TylerPottsDev/SPA-portfolio-page
--->
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Minervian Dynamics</title>
+      <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minervian Dynamics</title>
-    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap"
+        rel="stylesheet"
+      />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="./css/styles.css" />
-    <script src="./js/main.js"></script>
-</head>
-
-<body>
+      <link rel="stylesheet" href="./styles/styles.css" />
+      <script src="./js/main.js"></script>
+    </head>
+  </head>
+  <body>
     <header>
-
-        <div class="container">
-            <img src="./img/logo.png" alt="Minervian Dynamics Logo" width="62px" height="54px">
-            <h2><a href="https://minerviandynamics.com">
-                    Minervian Dynamics
-                </a></h2>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#alliance">Alliance</a>
-                <a href="#contact">Discord</a>
-                <a href="https://docs.minerviandynamics.com">Docs</a>
-            </nav>
-            <button class="hamburger">
-                <div class="bar"></div>
-            </button>
-        </div>
+      <div class="container">
+        <img
+          src="./assets/logo.png"
+          alt="Minervian Dynamics Logo"
+          width="62px"
+          height="54px"
+        />
+        <h2>
+          <a href="https://minerviandynamics.com"> Minervian Dynamics </a>
+        </h2>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#alliance">Alliance</a>
+          <a href="https://docs.minerviandynamics.com">Docs</a>
+          <a href="#contact">Discord</a>
+        </nav>
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+      </div>
     </header>
 
     <nav class="mobile-nav">
-        <a href="#about">About</a>
-        <a href="#alliance">Alliance</a>
-        <a href="#contact">Discord</a>
+      <a href="#about">About</a>
+      <a href="#alliance">Alliance</a>
+      <a href="https://docs.minerviandynamics.com">Docs</a>
+      <a href="#contact">Discord</a>
     </nav>
 
     <main>
+      <section class="banner">
+        <div class="container">
+          <h1>
+            An EVE Online <span>industry</span>
+            focused corporation
+          </h1>
 
-        <section class="banner">
-            <div class="container">
-                <h1>
-                    An Eve-online <span>industry</span>
-                    focused corporation
-                </h1>
+          <h3>Open recruitment. <span>No minimum SP required.</span></h3>
+        </div>
+      </section>
 
-                <h3>Open recruitment. <span>No minimum SP required.</span></h3>
+      <section id="about" class="container-about">
+        <h2>About</h2>
+        <div class="selection-container">
+          <div class="select-div" id="select1">Industry</div>
+          <div class="select-div" id="select2">Faction Warfare</div>
+          <div class="select-div" id="select3">Missions & Abyssals</div>
+          <div class="select-div" id="select4">Exploration</div>
+          <div class="select-div" id="select5">Mentoring</div>
+          <div class="select-div" id="select6">Recruitment</div>
+        </div>
 
+        <div class="child-div" id="child1" aria-hidden="false">
+          <div class="flex-container">
+            <div class="industry">
+              <img src="./assets/industry.jpeg" alt="Industry" />
             </div>
-
-        </section>
-
-        <section id="about" class="container-about">
-            <div class="container">
-                <h2>About</h2>
-
-                <h4>We utilize discord for comms, and post a weekly schedule of 
-                    activities in the corp bulletin.</h4>
-
-                <div class="container-about-grid">
-
-                    <div class="about">
-                        <figure class="img-box">
-                            <img src="./img/industry.jpeg" alt="Webs" class="img" />
-                        </figure>
-                        <div class="content">
-                            <h3>Industry</h3>
-                            <p>
-                                - Based out of Scheenins <br>
-                                - Fleet mining <i>with boosts!</i><br>
-                                - Corp buy-back program <br>
-                                - Free alpha mining ships <br>
-                                - Highest tier reprocessing <br>
-                                - LP & ISK Tax Rate: <span>5%</span>
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <div class="about">
-                        <figure class="img-box">
-                            <img src="./img/fw.jpg" alt="Faction Warefare" class="img" />
-                        </figure>
-                        <div class="content">
-                            <h3>Faction Warfare</h3>
-                            <p>
-                                We enlist for Gallente. We have <i>multiple</i>
-                                fleet commanders for FW, which allows us to run
-                                three to four nights a week!
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="about">
-                        <figure class="img-box">
-                            <img src="./img/abyssal.jpg" alt="Missions & Abyssals" class="img" />
-                        </figure>
-                        <div class="content">
-                            <h3>Missions & Abyssals</h3>
-                            <p>
-                                We are currently running fleets for L4
-                                missions. We have players new and old, low and
-                                high SP, who all are happy to fleet up when you
-                                need help <i> - especially for killing Dagan!</i>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="about">
-                        <figure class="img-box">
-                            <img src="./img/mentoring.png" alt="Mentoring Service" class="img" />
-                        </figure>
-                        <div class="content">
-                            <h3>Mentoring</h3>
-                            <p>
-                                We will help you understand any dimension of
-                                Eve that compliments your playstyle. While we are
-                                focused on industry, we have a vast wealth of
-                                experience we can to share with you -
-                                exploration, PvP, PvE, we can help you get
-                                started! <br> <br>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-                <h4>Read more about what we stand for on Tranquility in our
-                    corporation description.</h4>
+            <div class="flex-container2">
+              <div class="ct">
+                <span class="titles">Mine. Build. Sell.</span> <br /><br />
+              </div>
+              <div class="about-content">
+                Industry is our jam. Learn and grow with us!
+                <ul>
+                  <li>Based out of Scheenins</li>
+                  <li>Fleet mining with boosts!</li>
+                  <li>Corp buy-back program</li>
+                  <li>Free alpha mining ships</li>
+                  <li>Highest tier reprocessing</li>
+                  <li>LP & ISK Tax Rate: 5%</li>
+                </ul>
+                Check out our
+                <a
+                  href="https://docs.minerviandynamics.com/career-overview/markets/"
+                  >guide to the market</a
+                >.
+              </div>
             </div>
-        </section>
-
-        <section id="alliance" class="container-alliance">
-            <div class="container">
-                <h2>Alliance</h2>
-
-                <div class="container-alliance-grid">
-
-                    <div class="alliance">
-                        <div class="content">
-                            <h3>We're building long term relationships</h3>
-                            <br>
-                            <p>
-                                Contact <span>Imokoz</span> or
-                                <span>Doctor WilyCoyote</span> for details on
-                                future alliances.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
+          </div>
+        </div>
+        <div class="child-div" id="child2" aria-hidden="true">
+          <div class="flex-container">
+            <div class="faction-warfare">
+              <img src="./assets/fw.jpeg" alt="Faction Warfare" />
             </div>
-        </section>
-
-        <section class="contact" id="contact">
-            <div class="container">
-                <h2>Contact</h2>
-                <p><i>To contact us, use in-game mail or discord.</i></p>
-                <br>
-                <p>👇 </p>
-                <br>
-                <p><a class="" href="https://discord.gg/5XZ6PveXb"><img src="./img/discord-light.png" alt="Join 
-                    Minervian Dynamics Discord" height="19px" width="100px"></a></p>
+            <div class="flex-container2">
+              <div class="ct">
+                <span class="titles">Get Millions of Loyalty Points</span>
+                <br /><br />
+              </div>
+              <div class="about-content">
+                Get into fleets regularly!
+                <ul>
+                  <li>Enlist for Gallente</li>
+                  <li>We have multiple fleet commanders for FW</li>
+                  <li>Fleets run ~3-4 nights a week</li>
+                </ul>
+                Check out our
+                <a
+                  href="https://docs.minerviandynamics.com/career-overview/faction-warfare/"
+                  >faction warfare guide</a
+                >.
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+        <div class="child-div" id="child3" aria-hidden="true">
+          <div class="flex-container">
+            <div class="missions">
+              <img src="./assets/abyssal.jpeg" alt="Missions and Abyssals" />
+            </div>
+            <div class="flex-container2">
+              <div class="ct">
+                <span class="titles">Flex Your Filaments</span> <br /><br />Team
+                up for Missions and Abyssals!
+                <ul>
+                  <li>Fleets for Level 4 missions</li>
+                  <li>Kill Dagan. But, dead-er</li>
+                  <li>
+                    Many different SP levels in our corp means more
+                    opportunities for fleeting with someone close to your level
+                  </li>
+                  <li>Fleets for Abyssals of all tiers</li>
+                </ul>
+                Check out our
+                <a
+                  href="https://docs.minerviandynamics.com/career-overview/missions/"
+                  >guides on missions and abyssals</a
+                >.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="child-div" id="child4" aria-hidden="true">
+          <div class="flex-container">
+            <div class="exploration">
+              <img src="./assets/explore.jpg" alt="Exploration" />
+            </div>
+            <div class="flex-container2">
+              <div class="ct">
+                <span class="titles">Embrace J-Space</span> <br />
+                <ul>
+                  <li>
+                    Learn or group with other highly experienced exploration
+                    pilots
+                  </li>
+                  <li>Huff gas</li>
+                  <li>Rat in fleets across J-Space</li>
+                </ul>
+                Check out our
+                <a
+                  href="https://docs.minerviandynamics.com/career-overview/exploration/"
+                  >exploration guides</a
+                >.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="child-div" id="child5" aria-hidden="true">
+          <div class="flex-container">
+            <div class="mentoring">
+              <img src="./assets/mentoring.png" alt="Mentoring" />
+            </div>
+            <div class="flex-container2">
+              <div class="ct">
+                <span class="titles">Learn with the best</span> <br /><br />We
+                have years of experience, and we're happy to share! <br />
+                <br />
+                We will help you understand any dimension of EVE that
+                compliments your playstyle. While we are focused on industry, we
+                have a vast wealth of experience we can to share <br />
+                with you - exploration, PvP, PvE, we can help you get started!
+                <br /><br />
+                Check out our
+                <a
+                  href="https://docs.minerviandynamics.com/guides/generating-isk/"
+                  >guides on making ISK
+                </a>
+                and the other
+                <a
+                  href="https://docs.minerviandynamics.com/reference/useful-websites/"
+                  >useful websites</a
+                >
+                we find very helpful.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="child-div" id="child6" aria-hidden="true">
+          <div class="flex-container">
+            <div class="recruiting">
+              <img src="./assets/recruiting.png" alt="Recruiting" />
+            </div>
+            <div class="flex-container2">
+              <div class="ct">
+                <span class="titles">Join today</span> <br /><br />We're
+                recruiting, but you're not limited to just our corp! <br />
+                <br />
+                You can also join:
+                <ul>
+                  <li>
+                    <span class="akw">E.DOM</span> Eden Dominion Coalition
+                  </li>
+                  OR
+                  <li>
+                    <span class="akw">UALE</span> Unlimited Acquisitions Ltd
+                  </li>
+                </ul>
+                <i>Read more on our alliance below 👇</i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section id="alliance" class="container-alliance">
+        <div class="hc">
+          <h2>Alliance</h2>
+          <h3>E.M.U.</h3>
+          <p><i>Noli Esse Culus</i></p>
+        </div>
+
+        <div class="flex-container">
+          <div class="image-container">
+            <img src="./assets/emu.png" alt="EMU Alliance Logo" />
+          </div>
+          <div class="alliance-content">
+            <p>
+              The E.M.U. alliance gets its name from the original corporations
+              which make up the core:
+            </p>
+            <ul>
+              <li>
+                <span class="keyword">E.DOM</span> Eden Dominion Coalition
+                <br />
+                &mdash; CEO: volt Amatin
+              </li>
+              <li>
+                <span class="keyword">OWLMD</span> Minervian Dynamics <br />
+                &mdash; CEO: Imokoz
+              </li>
+              <li>
+                <span class="keyword">UALE</span> Unlimited Acquisitions Ltd.
+                <br />
+                &mdash; CEO: Susi Queue
+              </li>
+            </ul>
+            <p>
+              We're a group of like-minded corporations who banded together to
+              enjoy EVE without being assholes to one another &mdash; or others
+              in the community.
+            </p>
+            <br />
+            <p>Message Imokoz in game or on discord for diplomacy.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <p><i>To contact us, use in-game mail or discord.</i></p>
+        <div class="container">
+          <div class="mdd-wrapper">
+            <div class="mdd">
+              <a href="https://discord.gg/tRCtd7kTQ8">
+                Minervian Dynamics &nbsp;
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 127.14 96.36"
+                >
+                  <path
+                    d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="mdd-wrapper">
+            <div class="mdd">
+              <a href="https://discord.gg/d2dFNRyz5z">
+                E.M.U. Alliance &nbsp;
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 127.14 96.36"
+                >
+                  <path
+                    d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        Not affliated with CCP. All logos and artwork used on our websites are
+        properties of their respective owners.
+      </footer>
     </main>
-</body>
-
+  </body>
 </html>
