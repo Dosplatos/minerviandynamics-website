@@ -231,11 +231,13 @@ main section.banner {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("../assets/bg.webp");
-  background-position: top right;
-  background-size: cover;
+  justify-content: center;
 }
-main section.banner:after {
+main section.banner .background-image-container {
+  background-position: top right;
+  z-index: 1;
+}
+main section.banner .background-image-container:after {
   content: "";
   display: block;
   position: absolute;
@@ -246,6 +248,15 @@ main section.banner:after {
   z-index: 0;
   background-color: #12002F;
   opacity: 0.8;
+}
+main section.banner .background-image-container .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 main section.banner .container {
   position: relative;
