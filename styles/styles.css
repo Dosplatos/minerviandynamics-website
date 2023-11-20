@@ -35,6 +35,10 @@ body.safari * {
   font-family: "Arial"; /* Use Lucida Sans for Safari */
 }
 
+body {
+  background-color: var(--color-dark-purple-800);
+}
+
 html {
   scroll-behavior: smooth;
 }
