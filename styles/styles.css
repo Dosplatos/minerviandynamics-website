@@ -239,7 +239,7 @@ main section.banner .background-image-container {
   height: 100%;
   z-index: 0;
 }
-main section.banner .background-image-container .background-image {
+main section.banner .background-image-container .bgi {
   position: absolute;
   top: 0;
   left: 0;
@@ -355,14 +355,9 @@ main .container-about .is-active {
 }
 main .container-about .child-div {
   display: none;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: flex-start;
   overflow: hidden;
   width: 100%;
   height: auto;
-  padding: 5px;
-  margin-top: 5px;
   background-color: var(--color-dark-yellow-100);
 }
 main .container-about .child-div h2 {
@@ -371,7 +366,6 @@ main .container-about .child-div h2 {
 }
 main .container-about .child-div .flex-container {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -381,11 +375,17 @@ main .container-about .child-div .flex-container2 {
   align-items: flex-start;
   justify-content: flex-start;
   width: 600px;
-  margin: 20px 40px 0 40px;
+  margin: 20px;
 }
-@media (max-width: 1210px) {
-  main .container-about .child-div .flex-container2 {
-    margin: 20px 40px 0 40px;
+main .container-about .child-div .flex-container2 ul {
+  margin-left: 20px;
+}
+main .container-about .child-div .flex-container2 ul li {
+  padding: 5px;
+}
+@media (max-width: 1190px) {
+  main .container-about .child-div .flex-container2 ul {
+    margin-left: 40px;
   }
 }
 main .container-about .child-div .flex-container2 .title-container {
@@ -411,21 +411,18 @@ main .container-about .child-div .flex-container2 .about-content {
     justify-content: center;
   }
 }
-main .container-about .child-div .industry, main .container-about .child-div .faction-warfare, main .container-about .child-div .missions, main .container-about .child-div .mentoring, main .container-about .child-div .exploration, main .container-about .child-div .recruiting {
-  align-self: flex-start;
+main .container-about .child-div .aimg {
   margin: 20px;
-  background-color: inherit;
 }
-main .container-about .child-div .industry img, main .container-about .child-div .faction-warfare img, main .container-about .child-div .missions img, main .container-about .child-div .mentoring img, main .container-about .child-div .exploration img, main .container-about .child-div .recruiting img {
+main .container-about .child-div .aimg img {
   display: block;
   width: 500px;
   height: auto;
-  margin: 30px 30px 0 50px;
   border-radius: 5px;
   box-shadow: 0px 4px 8px var(--color-dark-purple-800);
 }
 @media (max-width: 768px) {
-  main .container-about .child-div .industry img, main .container-about .child-div .faction-warfare img, main .container-about .child-div .missions img, main .container-about .child-div .mentoring img, main .container-about .child-div .exploration img, main .container-about .child-div .recruiting img {
+  main .container-about .child-div .aimg img {
     margin: 15px auto;
     width: 100%;
   }
@@ -604,6 +601,7 @@ main footer {
   color: var(--color-dark-yellow-100);
   font-size: 10px;
   padding: 40px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

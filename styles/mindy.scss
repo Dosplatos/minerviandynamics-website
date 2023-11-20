@@ -262,7 +262,7 @@ main {
             height: 100%;
             z-index: 0;
 
-            .background-image {
+            .bgi {
               position: absolute;
               top: 0;
               left: 0;
@@ -396,14 +396,10 @@ main {
 
         .child-div {
             display: none;
-            flex-wrap: wrap;
-            align-items: flex-start; 
-            justify-content: flex-start;
             overflow: hidden;
             width: 100%;
             height: auto;
-            padding: 5px;
-            margin-top: 5px;
+
             background-color: var(--color-dark-yellow-100);
         
             h2 {
@@ -413,7 +409,6 @@ main {
 
             .flex-container {
                 display: flex;
-                align-items: center; 
                 justify-content: center; 
                 flex-wrap: wrap;
             }
@@ -424,10 +419,17 @@ main {
                 align-items: flex-start;
                 justify-content: flex-start;
                 width: 600px;
-                margin: 20px 40px 0 40px;
-            
-                @media (max-width: 1210px) {
-                    margin: 20px 40px 0 40px;
+                margin: 20px;
+
+                ul {
+                    margin-left: 20px;
+                    li {
+                        padding: 5px;
+                    }
+                    @media (max-width: 1190px) {
+                        margin-left: 40px;
+                    }
+                
                 }
             
                 .title-container {
@@ -456,16 +458,13 @@ main {
                 }
             }
             
-            .industry, .faction-warfare, .missions, .mentoring, .exploration, .recruiting {
-                align-self: flex-start;
+            .aimg {
                 margin: 20px;
-                background-color: inherit;
                 
                 img {
                     display: block;
                     width: 500px;
                     height: auto;
-                    margin: 30px 30px 0 50px;
                     border-radius: 5px;
                     box-shadow: 0px 4px 8px var(--color-dark-purple-800);
                     @media (max-width: 768px) {
@@ -676,5 +675,6 @@ footer {
     color: var(--color-dark-yellow-100);
     font-size: 10px;
     padding: 40px;
+    text-align: center;
 }
 }
