@@ -235,7 +235,18 @@ main section.banner {
 }
 main section.banner .background-image-container {
   background-position: top right;
-  z-index: 1;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+main section.banner .background-image-container .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 main section.banner .background-image-container:after {
   content: "";
@@ -249,18 +260,9 @@ main section.banner .background-image-container:after {
   background-color: #12002F;
   opacity: 0.8;
 }
-main section.banner .background-image-container .background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
 main section.banner .container {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   background-color: transparent;
 }
 main section.banner .container span {
