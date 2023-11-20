@@ -409,6 +409,7 @@ main .container-about .child-div .flex-container2 .about-content {
 @media (max-width: 1230px) {
   main .container-about .child-div .flex-container2 .about-content {
     justify-content: center;
+    margin-top: 40px;
   }
 }
 main .container-about .child-div .aimg {
